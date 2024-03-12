@@ -13,8 +13,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Squarer {
     /**
-     * TODO: Inject this field
+     * DONE: Inject this field
      */
+    @Autowired
     Multiplier multiplier;
 
     /**

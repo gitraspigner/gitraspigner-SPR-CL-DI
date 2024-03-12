@@ -20,14 +20,17 @@ import org.springframework.stereotype.Component;
  * constructor injection (above a constructor), setter injection (over a setter method), and field injection
  * (above the injected field declaration itself, as is done here).
  *
- * TODO: Add the @Autowired annotation to achieve dependency injection in 3 different ways (constructor, setter, and field)
+ * DONE: Add the @Autowired annotation to achieve dependency injection in 3 different ways (constructor, setter, and field)
  */
 @ComponentScan(basePackages = "com.revature.components")
 @Component
 public class ArithmeticPresentationLayer {
 
+    @Autowired
     private Adder adder;
+    @Autowired
     private Multiplier multiplier;
+    @Autowired
     private Squarer squarer;
 
     public void setMultiplier(Multiplier multiplier) {
